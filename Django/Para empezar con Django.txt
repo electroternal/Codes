@@ -1,0 +1,27 @@
+Django en entorno virtual
+En computadora nueva hay que instalar un entorno virtual para esto con pip
+pip install virtualenvwrapper-win
+
+
+en consola:
+1. mkvirtualenv "mi-app" (el entorno se guarda en C:\Users\AlexisLaptop\Envs)
+
+para cambiar de projectos
+workon mi-app
+
+2. (mi-app) pip install django
+
+En la carpeta donde quieres hacer el projecto
+3. django-admin startproject "mi-app" (creas el Projecto con el nombre al final)
+
+En la carpeta donde está manage.py dentro del projecto:
+4. python manage.py runserver
+
+5. control + C (para salir del servidor)
+
+Para migrar unos archivos de Django que dice que son necesarios para operar bien
+6. python manage.py migrate
+
+7. python manage.py startapp "movies" (crea un programa llamado movies)
+
+
