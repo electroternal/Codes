@@ -99,6 +99,8 @@ while GameOff == True:
             Xplynum.append(InPutnum)
             if len(playedNum) < 9:
                 if len(Xplynum) >= 3 and checkGame(Xplynum) == "Won":
+                    os.system('cls')
+                    printXOtabla(InPutnum,player)
                     continueorNot = input("¡¡¡---X Won---!!!\nescribe ---yes--- para comenzar otra vez ---no--- para terminar => ")
                     if continueorNot.lower() == "yes":
                         GameOff = True
@@ -116,6 +118,8 @@ while GameOff == True:
                 printXOtabla(InPutnum,player)
                 player = "Oply"
             else:
+                os.system('cls')
+                printXOtabla(InPutnum,player)
                 continueorNot = input("----Empate----\nescribe ---yes--- para comenzar otra vez ---no--- para terminar => ")
                 if continueorNot.lower() == "yes":
                     GameOff = True
@@ -139,6 +143,8 @@ while GameOff == True:
             Oplynum.append(InPutnum)
             if len(playedNum) < 9:
                 if len(Oplynum) >= 3 and checkGame(Oplynum) == "Won":
+                    os.system('cls')
+                    printXOtabla(InPutnum,player)
                     continueorNot = input("¡¡¡---O Won---!!!\nescribe ---yes--- para comenzar otra vez ---no--- para terminar => ")
                     if continueorNot.lower() == "yes":
                         GameOff = True
@@ -156,6 +162,8 @@ while GameOff == True:
                 printXOtabla(InPutnum,player)
                 player = "Xply"
             else:
+                os.system('cls')
+                printXOtabla(InPutnum,player)
                 continueorNot = input("----Empate----\nescribe ---yes--- para comenzar otra vez ---no--- para terminar => ")
                 if continueorNot.lower() == "yes":
                     GameOff = True
